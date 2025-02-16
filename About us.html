@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Music and Art Upload and Download</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        *{  
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background: url("2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 110vh;
+            background: rgba(237, 181, 181, 0.129);
+        }
+        .nav{
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+            z-index: 100;
+        }
+        .nav-logo p{
+            color: white;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .nav-menu ul{
+            display: flex;
+        }
+        .nav-menu ul li{
+            list-style-type: none;
+        }
+        .nav-menu ul li .link{
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+            padding-bottom: 15px;
+            margin: 0 25px;
+        }
+        .link:hover, .active{
+            border-bottom: 2px solid #fff;
+        }
+        .nav-button .btn{
+            width: 130px;
+            height: 40px;
+            font-weight: 500;
+            background: rgba(127, 116, 116, 0.569);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: .3s ease;
+        }
+        .btn:hover{
+            background: rgba(247, 247, 247, 0.3);
+        }
+        #registerBtn{
+            margin-left: 15px;
+        }
+        .btn.white-btn{
+            background: rgb(215, 198, 198);
+        }
+        .btn.btn.white-btn:hover{
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .nav-menu-btn{
+            display: none;
+        }
+        .about-container{
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .about-container h1{
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .about-container p{
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-logo">
+            <p>Music & Art</p>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#" class="link">About Us</a></li>
+                <li><a href="#" class="link">Upload</a></li>
+                <li><a href="#" class="link">Download</a></li>
+                <li><a href="#" class="link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn">Login</button>
+            <button class="btn white-btn" id="registerBtn">Register</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="about-container">
+            <h1>About Us</h1>
+            <p>Welcome to our Music and Art Upload and Download website. We are dedicated to providing a platform for artists and music enthusiasts to share and discover new content. Our mission is to support creativity and make it easy for people to access and enjoy music and art from around the world.</p>
+            <p>Whether you are an artist looking to share your work or a fan looking for new inspiration, our website offers a user-friendly experience for uploading, downloading, and exploring a wide range of music and art. Join our community today and be a part of the creative revolution!</p>
+        </div>
+    </div>
+</body>
+</html>

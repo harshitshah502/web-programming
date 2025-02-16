@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Top 100 Artists</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Import Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: url("2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgba(237, 181, 181, 0.129);
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+            background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+            z-index: 100;
+        }
+
+        .nav-logo p {
+            color: white;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .nav-menu ul {
+            display: flex;
+        }
+
+        .nav-menu ul li {
+            list-style-type: none;
+        }
+
+        .nav-menu ul li .link {
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+            padding-bottom: 15px;
+            margin: 0 25px;
+        }
+
+        .link:hover, .active {
+            border-bottom: 2px solid #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 120px auto 50px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            color: #fff;
+        }
+
+        th {
+            background: rgba(127, 116, 116, 0.569);
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-logo">
+            <p>My Music & Art Platform</p>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="ile:///D:/program/sem%20IV/web%20programming/assigment/About%20us.html#" class="link">About</a></li>
+                <li><a href="#" class="link">Upload</a></li>
+                <li><a href="#" class="link">Top 100</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+            <h1>Top 100 Artists</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Artist Name</th>
+                        <th>Sales</th>
+                        <th>Downloads</th>
+                        <th>Engagement</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Data -->
+                    <tr>
+                        <td>1</td>
+                        <td>Artist A</td>
+                        <td>500</td>
+                        <td>1000</td>
+                        <td>2000</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Artist B</td>
+                        <td>450</td>
+                        <td>900</td>
+                        <td>1800</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Artist C</td>
+                        <td>400</td>
+                        <td>800</td>
+                        <td>1600</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Artist D</td>
+                        <td>350</td>
+                        <td>700</td>
+                        <td>1400</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Artist E</td>
+                        <td>300</td>
+                        <td>600</td>
+                        <td>1200</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Artist F</td>
+                        <td>250</td>
+                        <td>500</td>
+                        <td>1000</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Artist G</td>
+                        <td>200</td>
+                        <td>400</td>
+                        <td>800</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Artist H</td>
+                        <td>150</td>
+                        <td>300</td>
+                        <td>600</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Artist I</td>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>400</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Artist J</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <!-- Repeat for remaining artists up to 100 -->
+                    <!-- Repeat for 100 artists -->
+                    <tr>
+                        <td>11</td>
+                        <td>Artist K</td>
+                        <td>45</td>
+                        <td>90</td>
+                        <td>180</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Artist L</td>
+                        <td>40</td>
+                        <td>80</td>
+                        <td>160</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Artist M</td>
+                        <td>35</td>
+                        <td>70</td>
+                        <td>140</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Artist N</td>
+                        <td>30</td>
+                        <td>60</td>
+                        <td>120</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Artist O</td>
+                        <td>25</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Artist P</td>
+                        <td>20</td>
+                        <td>40</td>
+                        <td>80</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Artist Q</td>
+                        <td>15</td>
+                        <td>30</td>
+                        <td>60</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Artist R</td>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>40</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Artist S</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Artist T</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>16</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <!-- Repeat for remaining artists up to 100 -->
+                    <tr>
+                        <td>21</td>
+                        <td>Artist U</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>12</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>Artist V</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Artist W</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <!-- Continue adding rows up to 100 -->
+                    <tr>
+                        <td>24</td>
+                        <td>Artist X</td>
+                        <td>0.9</td>
+                        <td>1.8</td>
+                        <td>3.6</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>Artist Y</td>
+                        <td>0.8</td>
+                        <td>1.6</td>
+                        <td>3.2</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>Artist Z</td>
+                        <td>0.7</td>
+                        <td>1.4</td>
+                        <td>2.8</td>
+                        <td>Calculated Score</td>
+                    </tr>
+                    <!-- Continue adding rows up to 100 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
